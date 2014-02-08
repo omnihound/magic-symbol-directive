@@ -27,4 +27,35 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	  link : link
 	};
 
+}).directive('cardText', function(){
+	function link(scope, element, attrs) {
+	  var cardText;
+
+
+	  scope.$watch(attrs.cardText, function(value){
+	    element.empty();
+	
+	    cardText = value;
+	    if (cardText != null) {
+	      var symbolArray = cardText.match(new RegExp('\{.{1,3}\}', 'g'));
+
+	      //console.log(JSON.stringify(symbolArray));
+	      if (symbolArray != null) {
+
+		cardText.replace(new RegExp('\{.{1,3}\}','g'), "");
+	        symbolArray.forEach(function(symbol){
+			console.log("symbol = " + symbol);
+			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
+			cardText = cardText.replace(symbol, "<span class='mana mana-"+ styleToken +"'></span>");
+	        });
+	      }
+		
+	      element.html(cardText);
+	   }
+	  });
+	};
+
+	return {
+	  link : link
+	};
 });
