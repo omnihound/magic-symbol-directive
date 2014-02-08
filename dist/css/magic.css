@@ -1,0 +1,68 @@
+.mana {
+    display: inline-block;
+    background: url('../image/mana.png') no-repeat;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+}
+
+.mana-2b { background-position: -0px -0px }
+.mana-br { background-position: -15px -0px }
+.mana-r { background-position: -30px -0px }
+.mana-gw { background-position: -45px -0px }
+.mana-2r { background-position: -60px -0px }
+.mana-2w { background-position: -75px -0px }
+.mana-rb { background-position: -90px -0px }
+.mana-rg { background-position: -0px -15px }
+.mana-wb { background-position: -15px -15px }
+.mana-6 { background-position: -30px -15px }
+.mana-gr { background-position: -45px -15px }
+.mana-bu { background-position: -60px -15px }
+.mana-s { background-position: -75px -15px }
+.mana-2 { background-position: -90px -15px }
+.mana-8 { background-position: -0px -30px }
+.mana-wu { background-position: -15px -30px }
+.mana-ru { background-position: -30px -30px }
+.mana-cp { background-position: -45px -30px }
+.mana-uw { background-position: -60px -30px }
+.mana-3 { background-position: -75px -30px }
+.mana-gb { background-position: -90px -30px }
+.mana-2g { background-position: -0px -45px }
+.mana-5 { background-position: -15px -45px }
+.mana-16 { background-position: -30px -45px }
+.mana-bp { background-position: -45px -45px }
+.mana-y { background-position: -60px -45px }
+.mana-17 { background-position: -75px -45px }
+.mana-11 { background-position: -90px -45px }
+.mana-2u { background-position: -0px -60px }
+.mana-ug { background-position: -15px -60px }
+.mana-wg { background-position: -30px -60px }
+.mana-b { background-position: -45px -60px }
+.mana-up { background-position: -60px -60px }
+.mana-gu { background-position: -75px -60px }
+.mana-ub { background-position: -90px -60px }
+.mana-u { background-position: -0px -75px }
+.mana-rp { background-position: -15px -75px }
+.mana-19 { background-position: -30px -75px }
+.mana-13 { background-position: -45px -75px }
+.mana-g { background-position: -60px -75px }
+.mana-12 { background-position: -75px -75px }
+.mana-wr { background-position: -90px -75px }
+.mana-w { background-position: -0px -90px }
+.mana-gp { background-position: -15px -90px }
+.mana-bw { background-position: -30px -90px }
+.mana-bg { background-position: -45px -90px }
+.mana-ur { background-position: -60px -90px }
+.mana-7 { background-position: -75px -90px }
+.mana-x { background-position: -90px -90px }
+.mana-rw { background-position: -0px -105px }
+.mana-9 { background-position: -15px -105px }
+.mana-10 { background-position: -30px -105px }
+.mana-20 { background-position: -45px -105px }
+.mana-14 { background-position: -60px -105px }
+.mana-0 { background-position: -75px -105px }
+.mana-wp { background-position: -90px -105px }
+.mana-18 { background-position: -0px -120px }
+.mana-1 { background-position: -15px -120px }
+.mana-15 { background-position: -30px -120px }
+.mana-4 { background-position: -45px -120px }
