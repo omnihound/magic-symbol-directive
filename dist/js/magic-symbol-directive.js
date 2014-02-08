@@ -41,8 +41,6 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 
 	      //console.log(JSON.stringify(symbolArray));
 	      if (symbolArray != null) {
-
-		cardText.replace(new RegExp('\{.{1,3}\}','g'), "");
 	        symbolArray.forEach(function(symbol){
 			console.log("symbol = " + symbol);
 			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
