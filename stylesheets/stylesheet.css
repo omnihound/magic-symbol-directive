@@ -433,3 +433,14 @@ Small Device Styles
 	box-shadow: 0 0 10px rgba(0,0,0,.1);
 	background-color:#fff;
 }
+
+#cardexample2 {
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:10px;
+	padding-right:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	background-color:#fff;
+}
