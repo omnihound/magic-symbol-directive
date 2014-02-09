@@ -3,9 +3,7 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	  var castingCost;
 
 	  scope.$watch(attrs.castingCost, function(value){
-	    if (element.hasOwnProperty('empty')) {
-	      element.empty();
-	    }
+	    element.html('');
 	    castingCost = value;
 
 	    if(castingCost != null) {
@@ -33,9 +31,7 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 
 
 	  scope.$watch(attrs.cardText, function(value){
-	    if (element.hasOwnProperty('empty')) {
-	      element.empty();
-	    }
+	    element.html('');
 	
 	    cardText = value;
 	    if (cardText != null) {
