@@ -1,6 +1,6 @@
 .mana {
     display: inline-block;
-    background: url('../image/mana.png') no-repeat;
+    background: url('../images/mana.png') no-repeat;
     color: transparent;
     width: 15px;
     height: 16px;
@@ -16,9 +16,9 @@
 
 .mana-5 { background-position: -79px -0px }
 .mana-6 { background-position: -95px -0px }
-.mana-7 { background-position: -110px -1px }
-.mana-8 { background-position: -126px -1px }
-.mana-9 { background-position: -142px -1px }
+.mana-7 { background-position: -110px -0px }
+.mana-8 { background-position: -126px -0px }
+.mana-9 { background-position: -142px -0px }
 
 .mana-10 { background-position: -0px -16px }
 .mana-11 { background-position: -16px -16px }

@@ -2,10 +2,8 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	function link(scope, element, attrs) {
 	  var castingCost;
 
-	  
-
 	  scope.$watch(attrs.castingCost, function(value){
-	    element.empty();
+	    element.html('');
 	    castingCost = value;
 
 	    if(castingCost != null) {
@@ -33,16 +31,18 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 
 
 	  scope.$watch(attrs.cardText, function(value){
-	    element.empty();
+	    element.html('');
 	
 	    cardText = value;
 	    if (cardText != null) {
+
+	      //carriage return with lines
+	      cardText = cardText.replace(new RegExp('\n\n','g'),'<br/><br/>');
 	      var symbolArray = cardText.match(new RegExp('\{.{1,3}\}', 'g'));
 
 	      //console.log(JSON.stringify(symbolArray));
 	      if (symbolArray != null) {
 	        symbolArray.forEach(function(symbol){
-			console.log("symbol = " + symbol);
 			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
 			cardText = cardText.replace(symbol, "<span class='mana mana-"+ styleToken +"'></span>");
 	        });
