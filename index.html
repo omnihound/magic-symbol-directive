@@ -128,6 +128,33 @@
 		</div>
 	</div>
   </div>
+  
+<h4>How to use</h4>
+Include the magic-symbol-directive dependency on your angular module!
+<pre>
+	<code>
+var app = angular.module("yourapp", ['magicSymbolDirective']);
+	</code>
+</pre>
+<p>
+After that, it is a matter of referencing a card object in your controller's scope 
+and then wire it to either the casting-cost property of the target element for parsing casting cost:
+</p>
+<pre>
+	<code>
+&lt;p&gt;Text: &lt;span card-text=&quot;card.text&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+	</code>
+</pre>
+
+<p>
+or the card-text property for parsing card text:
+</p>
+<pre>
+	<code>
+&lt;p&gt;Text: &lt;span card-text=&quot;card.text&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+	</code>
+</pre>
+
       </section>
     </div>
 
