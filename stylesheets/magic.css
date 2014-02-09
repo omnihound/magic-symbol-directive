@@ -1,0 +1,68 @@
+.mana {
+    display: inline-block;
+    background: url('../images/mana.png') no-repeat;
+    color: transparent;
+    width: 15px;
+    height: 16px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.mana-0 { background-position: -0px -0px }
+.mana-1 { background-position: -16px -0px }
+.mana-2 { background-position: -31px -0px }
+.mana-3 { background-position: -47px -0px }
+.mana-4 { background-position: -63px -0px }
+
+.mana-5 { background-position: -79px -0px }
+.mana-6 { background-position: -95px -0px }
+.mana-7 { background-position: -110px -0px }
+.mana-8 { background-position: -126px -0px }
+.mana-9 { background-position: -142px -0px }
+
+.mana-10 { background-position: -0px -16px }
+.mana-11 { background-position: -16px -16px }
+.mana-12 { background-position: -31px -16px }
+.mana-13 { background-position: -47px -16px }
+.mana-14 { background-position: -63px -16px }
+.mana-15 { background-position: -79px -16px }
+.mana-16 { background-position: -95px -16px }
+.mana-17 { background-position: -110px -16px }
+.mana-18 { background-position: -126px -16px }
+.mana-19 { background-position: -142px -16px }
+
+.mana-20 { background-position: -0px -32px }
+.mana-x { background-position: -16px -32px }
+.mana-y { background-position: -31px -32px }
+.mana-z { background-position: -47px -32px }
+.mana-w { background-position: -63px -32px }
+.mana-u { background-position: -79px -32px }
+.mana-b { background-position: -95px -32px }
+.mana-r { background-position: -110px -32px }
+.mana-g { background-position: -126px -32px }
+.mana-s { background-position: -142px -32px }
+
+.mana-wu { background-position: -0px -47px }
+.mana-wb { background-position: -16px -47px }
+.mana-ub { background-position: -31px -47px }
+.mana-ur { background-position: -47px -47px }
+.mana-br { background-position: -63px -47px }
+.mana-bg { background-position: -79px -47px }
+.mana-rw { background-position: -95px -47px }
+.mana-rg { background-position: -110px -47px }
+.mana-gw { background-position: -126px -47px }
+.mana-gu { background-position: -142px -47px }
+
+.mana-2w { background-position: -0px -63px }
+.mana-2u { background-position: -16px -63px }
+.mana-2b { background-position: -31px -63px }
+.mana-2r { background-position: -47px -63px }
+.mana-2g { background-position: -63px -63px }
+.mana-pw { background-position: -79px -63px }
+.mana-pu { background-position: -95px -63px }
+.mana-pb { background-position: -110px -63px }
+.mana-pr { background-position: -126px -63px }
+.mana-pg { background-position: -142px -63px }
+
+.mana-t { background-position: -0px -79px }
+.mana-q { background-position: -16px -79px }
