@@ -56,4 +56,21 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	return {
 	  link : link
 	};
+}).service('cardTextProcessor', function() {
+	return function(string) {
+
+	      //carriage return with lines
+	      cardText = string.replace(new RegExp('\n\n','g'),'<br/><br/>');
+	      var symbolArray = cardText.match(new RegExp('\{.{1,3}\}', 'g'));
+
+	      //console.log(JSON.stringify(symbolArray));
+	      if (symbolArray != null) {
+	        symbolArray.forEach(function(symbol){
+			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
+			cardText = cardText.replace(symbol, '<span class="mana mana-'+ styleToken +'"></span>');
+	        });
+	      }
+
+	      return cardText;	
+	}
 });
