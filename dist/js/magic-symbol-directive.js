@@ -10,9 +10,11 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	      castingCostArray = castingCost.toLowerCase().replace(new RegExp('}{','g'), ",").replace('{', "").replace('}', "").replace(new RegExp('/','g'),"").split(",");
 	      
 	      castingCostArray.forEach(function(cc) {
-				var symbol = document.createElement('span');
-				symbol.classList.add('mana');
-				symbol.classList.add('mana-' + cc);
+				var symbol = document.createElement('i');
+				symbol.classList.add('ms');
+				symbol.classList.add('ms-cost');
+				symbol.classList.add('ms-shadow');
+				symbol.classList.add('ms-' + cc);
 
 				element.append(symbol);
 	      });
@@ -44,7 +46,7 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	      if (symbolArray != null) {
 	        symbolArray.forEach(function(symbol){
 			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
-			cardText = cardText.replace(symbol, "<span class='mana mana-"+ styleToken +"'></span>");
+			cardText = cardText.replace(symbol, "<i class='ms ms-cost ms-shadow ms-"+ styleToken +"'></i>");
 	        });
 	      }
 		
@@ -67,7 +69,7 @@ angular.module('magicSymbolDirective', []).directive('castingCost', function(){
 	      if (symbolArray != null) {
 	        symbolArray.forEach(function(symbol){
 			var styleToken = symbol.toLowerCase().replace('{', "").replace('}', "").replace('/',"");
-			cardText = cardText.replace(symbol, '<span class="mana mana-'+ styleToken +'"></span>');
+			cardText = cardText.replace(symbol, '<i class="ms ms-cost ms-shadow ms-'+ styleToken +'"></i>');
 	        });
 	      }
 
